@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inscrição - Oficina Rural</title>
+    <link rel="stylesheet" href="oficina.css">
+    <script src="script.js" defer></script> <!-- Incluindo o arquivo JS -->
+</head>
+<body>
+    <!-- Cabeçalho -->
+    <header>
+        <div class="container">
+            <h1>Oficina Rural 2025</h1>
+            <p>Participe da nossa oficina e aprenda técnicas essenciais para o campo!</p>
+        </div>
+    </header>
+
+    <!-- Seção sobre o evento -->
+    <section class="about-event">
+        <div class="container">
+            <h2>Sobre a Oficina</h2>
+            <p>A Oficina Rural é uma oportunidade única para agricultores e interessados aprenderem técnicas de cultivo sustentável, manejo de solo e técnicas agrícolas modernas. A oficina será realizada no dia 15 de julho de 2025, em nossa fazenda comunitária.</p>
+        </div>
+    </section>
+
+    <!-- Formulário de Inscrição -->
+    <section class="registration">
+        <div class="container">
+            <h2>Formulário de Inscrição</h2>
+            <form id="registration-form" onsubmit="return handleSubmit(event)">
+                <label for="name">Nome completo:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">E-mail:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="phone">Telefone:</label>
+                <input type="tel" id="phone" name="phone" required>
+
+                <label for="experience">Experiência prévia (se houver):</label>
+                <input type="text" id="experience" name="experience">
+
+                <button type="submit">Inscrever-se</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Rodapé -->
+    <footer>
+        <div class="container">
+            <p>Contato: oficina@rural2025.com | Telefone: (11) 9876-5432</p>
+        </div>
+    </footer>
+
+    <!-- Modal de Confirmação -->
+    <div id="confirmation-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-btn" onclick="closeModal()">&times;</span>
+            <h2>Inscrição Realizada!</h2>
+            <p>Obrigado por se inscrever na Oficina Rural. Em breve, você receberá mais informações no seu e-mail.</p>
+        </div>
+    </div>
+</body>
+</html>

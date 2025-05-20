@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inscrição - Feira de Agricultura Familiar</title>
+    <link rel="stylesheet" href="feira.css">
+    <script src="script.js" defer></script> <!-- Incluindo o arquivo JS -->
+</head>
+<body>
+    <!-- Cabeçalho -->
+    <header>
+        <div class="container">
+            <h1>Feira de Agricultura Familiar 2025</h1>
+            <p>Inscreva-se para participar da nossa feira e apoiar a agricultura local!</p>
+        </div>
+    </header>
+
+    <!-- Seção sobre o evento -->
+    <section class="about-event">
+        <div class="container">
+            <h2>Sobre o Evento</h2>
+            <p>O evento Feira de Agricultura Familiar é uma oportunidade para agricultores locais exporem seus produtos, 
+            trocar experiências e promover a sustentabilidade. Acontecerá no dia 30 de junho de 2025, no centro comunitário local.</p>
+        </div>
+    </section>
+
+    <!-- Formulário de Inscrição -->
+    <section class="registration">
+        <div class="container">
+            <h2>Formulário de Inscrição</h2>
+            <form id="registration-form" onsubmit="return handleSubmit(event)">
+                <label for="name">Nome completo:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">E-mail:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="phone">Telefone:</label>
+                <input type="tel" id="phone" name="phone" required>
+
+                <label for="product">Produto principal:</label>
+                <input type="text" id="product" name="product" required>
+
+                <button type="submit">Inscrever-se</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Rodapé -->
+    <footer>
+        <div class="container">
+            <p>Contato: feira@agriculturafamiliar.com | Telefone: (11) 1234-5678</p>
+        </div>
+    </footer>
+
+    <!-- Modal de Confirmação -->
+    <div id="confirmation-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-btn" onclick="closeModal()">&times;</span>
+            <h2>Inscrição Realizada!</h2>
+            <p>Obrigado por se inscrever na Feira de Agricultura Familiar. Em breve, você receberá mais informações no seu e-mail.</p>
+        </div>
+    </div>
+</body>
+</html>

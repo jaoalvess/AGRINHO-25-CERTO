@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Festejando a Conexão Campo e Cidade</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="scrip.js">
+</head>
+<body>
+    <header>
+        <h1>Exposição Agricultural</h1>
+        <p>Unindo tradições rurais com a modernidade urbana</p>
+    </header>
+
+    <nav>
+        <a href="#sobre">Sobre</a>
+        <a href="#eventos">Eventos</a>
+        <a href="#galeria">Galeria</a>
+        <a href="#depoimentos">Depoimentos</a>
+        <a href="#contato">Contato</a>
+    </nav>
+
+    <main>
+        <section id="sobre">
+            <h2>Sobre o Projeto</h2>
+            <p>O projeto <strong>\"Festejando a Conexão Campo e Cidade\"</strong> é uma iniciativa que visa estreitar os laços entre os mundos rural e urbano, promovendo um intercâmbio cultural, social e econômico. Através de atividades educativas, artísticas e gastronômicas, queremos valorizar as raízes do campo e integrá-las à vida nas cidades.</p>
+            <ul>
+                <li>Feiras de produtos orgânicos e agroecológicos</li>
+                <li>Oficinas de saberes tradicionais</li>
+                <li>Encontros culturais e musicais</li>
+                <li>Debates sobre sustentabilidade e políticas públicas</li>
+            </ul>
+        </section>
+
+        <section id="eventos">
+            <h2>Programação de Eventos</h2>
+
+            <article class="evento">
+                <h3>Feira da Agricultura Familiar</h3>
+                <img src="img/feira.jpg" alt="Feira de produtos do campo">
+                <p>Produtos frescos direto do campo, com barracas de frutas, verduras, queijos, doces e artesanato.</p>
+                <a href="feira.html">
+                 <button class="btn-inscrever" onclick="inscrever('Feira da Agricultura Familiar')">Inscreva-se</button>    
+                </a>
+               
+            </article>
+
+            <article class="evento">
+                <h3>Oficina de Saberes Rurais</h3>
+                <img src="img/oficina.jpg" alt="Oficina rural">
+                <p>Aprenda técnicas de cultivo, produção de conservas, fitoterapia e culinária caipira.</p>
+
+                <a href="oficina.html">
+              <button class="btn-inscrever" onclick="inscrever('Oficina de Saberes Rurais')">Inscreva-se</button>       
+                </a>
+               
+            </article>
+
+            <article class="evento">
+                <h3>Festival de Música Popular</h3>
+                <img src="img/festival.jpg" alt="Festival musical">
+                <p>Shows com artistas do campo e da cidade, rodas de viola, repentes e apresentações de grupos folclóricos.</p>
+                <a href="festival.html">
+              <button class="btn-inscrever" onclick="inscrever('Festival de Música Popular')">Inscreva-se</button>       
+                </a>
+               
+            </article>
+        </section>
+
+        <section id="galeria">
+            <h2>Galeria de Fotos</h2>
+            <div class="galeria">
+                <img src="campo.jpeg" alt="Paisagem do campo">
+                <img src="feira urbana.jpg" alt="Feira urbana">
+                <img src="campo e a cidade.gif" alt="Evento integrando campo e cidade">
+            </div>
+        </section>
+
+        <section id="depoimentos">
+            <h2>Depoimentos</h2>
+            <blockquote>
+                "Participar desse projeto mudou minha visão sobre a vida rural. Trouxe o campo para dentro da minha cidade!"<br><cite>– Ana, estudante</cite>
+            </blockquote>
+            <blockquote>
+                "Foi emocionante mostrar nossa cultura para pessoas que nunca tiveram contato com o campo."<br><cite>– Seu João, agricultor familiar</cite>
+            </blockquote>
+        </section>
+
+        <section id="contato">
+            <h2>Contato</h2>
+            <p>Tem interesse em participar ou apoiar o projeto? Entre em contato conosco:</p>
+            <form onsubmit="enviarFormulario(event)">
+                <input type="text" name="nome" placeholder="Seu nome" required>
+                <input type="email" name="email" placeholder="Seu e-mail" required>
+                <textarea name="mensagem" rows="4" placeholder="Sua mensagem"></textarea>
+                <button type="submit">Enviar</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Festejando a Conexão Campo e Cidade. Todos os direitos reservados.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

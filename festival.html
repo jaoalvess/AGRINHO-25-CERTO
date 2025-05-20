@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inscrição - Festival de Música 2025</title>
+    <link rel="stylesheet" href="festival.css">
+    <script src="script.js" defer></script> <!-- Incluindo o arquivo JS -->
+</head>
+<body>
+    <!-- Cabeçalho -->
+    <header>
+        <div class="container">
+            <h1>Festival de Música 2025</h1>
+            <p>Participe do maior evento musical do ano e mostre seu talento!</p>
+        </div>
+    </header>
+
+    <!-- Seção sobre o evento -->
+    <section class="about-event">
+        <div class="container">
+            <h2>Sobre o Festival</h2>
+            <p>O Festival de Música 2025 é um evento que reúne artistas de diversos gêneros musicais para uma grande celebração da música. O festival acontecerá no dia 25 de agosto de 2025, no Parque Central da cidade. Venha se divertir, cantar e dançar!</p>
+        </div>
+    </section>
+
+    <!-- Formulário de Inscrição -->
+    <section class="registration">
+        <div class="container">
+            <h2>Formulário de Inscrição</h2>
+            <form id="registration-form" onsubmit="return handleSubmit(event)">
+                <label for="name">Nome completo:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">E-mail:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="phone">Telefone:</label>
+                <input type="tel" id="phone" name="phone" required>
+
+                <label for="genre">Gênero musical preferido:</label>
+                <input type="text" id="genre" name="genre" required>
+
+                <button type="submit">Inscrever-se</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Rodapé -->
+    <footer>
+        <div class="container">
+            <p>Contato: festival@musica2025.com | Telefone: (11) 8765-4321</p>
+        </div>
+    </footer>
+
+    <!-- Modal de Confirmação -->
+    <div id="confirmation-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-btn" onclick="closeModal()">&times;</span>
+            <h2>Inscrição Realizada!</h2>
+            <p>Obrigado por se inscrever no Festival de Música 2025. Em breve, você receberá mais informações no seu e-mail.</p>
+        </div>
+    </div>
+</body>
+</html>
